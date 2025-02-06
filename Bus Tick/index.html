@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Bus Ticket Booking</h2>
+        <form action="">
+            <label for="route">Select Route:</label>
+            <select  id="route">
+                <option value="">--Choose a route</option>
+                <option value="">Route A -- $10</option>    
+                <option value="">Route B -- $15</option>
+                <option value="">Route C -- $20</option>
+            </select>
+
+            <label for="tickets">Number Of Tickets:</label>
+            <input type="text" placeholder="Enter ticket quantity" class="tickets" id="tickets">
+
+             </form>
+             <button class="button" onclick="CalcTotal()">Claculate Total</button>
+    </div>
+    
+</body>
+</html>

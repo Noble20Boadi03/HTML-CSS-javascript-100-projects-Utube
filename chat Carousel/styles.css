@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 10px;
+  }
+  
+  .slide {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .SA{
+    padding: 0px 5px;
+  }
+  .SA p{
+    font-size: 20px;
+  }
+  .SA h2{
+    font-size: 25px;
+  }
+  .slide:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  .slide:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 10;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  

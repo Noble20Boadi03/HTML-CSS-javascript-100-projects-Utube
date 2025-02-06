@@ -1,0 +1,51 @@
+body{
+    font-family: Arial,sans-serif;
+    background: linear-gradient(to bottom right, rgb(196, 250, 241), rgb(226, 244, 245));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form-container{
+    background-color: rgb(230, 239, 243);
+    width: 450px;
+    padding: 25px 0px 10px;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+h2{
+    text-align: center;
+    color: rgb(3, 90, 64);
+}
+label{
+    display: block;
+    padding: 8px 0px 3px;
+    color: rgb(19, 19, 19);
+    font-weight: bold;
+    text-align: center;
+}
+select,input{
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 0px 0px 8px 20px;
+}
+select{
+    width: 80%;
+}
+.tickets{
+    width: 87%;
+}
+.button{
+    font-size: 15px;
+    padding: 10px;
+    width: 83%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, rgb(3, 90, 74), rgb(12, 143, 128));
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight: bolder;
+    color: azure;
+}

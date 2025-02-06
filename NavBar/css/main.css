@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-size: 110%;
+}
+body{
+    background-color: rgb(14, 25, 23);
+    background-image: radial-gradient(rgb(56, 3, 100) 20%, rgb(0, 140, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.navbar{
+    height: 5rem;
+    width: 38rem;
+    background-color: #777;
+    box-shadow: 0 0 15px #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+}
+.navbar li{
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #555;
+    margin: auto 35px;
+    list-style: none;
+    position: relative;
+    top: 0%;
+    transition: .5s ease;
+}
+.navbar li.activity{
+    background-color: #191818;
+     top: -50%;
+     border-bottom: 5px solid aquamarine;
+}
+.navbar li icon{
+    color: #222;
+    cursor: pointer;
+}
+.navbar li.activity icon{
+    color: aqua;
+    filter: drop-shadow(0 0 5px aqua);
+}

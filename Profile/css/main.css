@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "poppins";
+    font-weight: 500;
+    src: url("../assets/fonts/poppins-medium-webfont.woff2"),
+    url("../assets/fonts/poppins-medium-webfont.woff") format("woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-size: 105%;
+    font-family: poppins;
+}
+
+body{
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    height: 420px;
+    width: 330px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.container.active{
+    background-color: rgb(28, 26, 26);
+}
+.container::after{
+    content: "";
+    position: absolute;
+    height: 120px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(28, 26, 26);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container.active::after{
+    background-color: white;
+}
+.container.active img{
+    background-color: #555;
+    border: 3.6px solid #fff;
+}
+.container.active h2{
+    color: #fff;
+}
+.container.active p{
+    color: #fff;
+}
+.container.active i{
+    color: #fff;
+}
+.container.active .btn{
+    background-color: #fff;
+    color: rgb(25, 23, 23);
+}
+
+.top-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.top-sec li{
+    list-style: none;
+}
+
+.mid-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mid-sec img{
+    height: 105px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 4.5px solid black;
+    background-color: rgb(28, 26, 26);
+}
+.mid-sec p{
+    margin-top: 9px;
+    font-size: .8rem;
+    color: rgb(99, 99, 99);
+}
+.socials{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+.socials i{
+    color:  rgb(99, 99, 99);
+    margin-top: 11px;
+    font-size: 1.1rem;
+}
+.btn{
+    color: white;
+    background-color: rgb(25, 23, 23);
+    margin: 15px 0 0;
+    font-size: .6rem;
+    height: 32px;
+    width: 90px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgb(33, 33, 33);
+    border: none;
+    outline: none;
+    transition: .5s ease;
+    z-index: 1;
+    cursor: pointer;
+    scale: .95;
+}
+.btn:hover{
+    scale: 1;
+}
